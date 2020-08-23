@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+provisioner:
+  name: chef_zero
+  cookbooks_path:
+      - ../cookbooks
+
+platforms:
+  - name: centos-7
+verifier:
+  name: inspec
+
+suites:
+  - name: rmq-server
+    verifier:
+      inspec_tests:
+        - test/integration/rmq
+    run_list:
+      - recipe[test-rmq]
+    attributes:

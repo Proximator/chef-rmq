@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'berkshelf'
+gem 'chef'
+gem 'chef-provisioning-vagrant'
+gem 'chefspec'
+gem 'librarian-chef'
+gem 'kitchen-vagrant'
+gem 'test-kitchen', '~> 1.4.1'
+gem 'serverspec'
+gem 'inspec'
