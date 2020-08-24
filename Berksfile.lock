@@ -1,0 +1,39 @@
+DEPENDENCIES
+  apt
+  chef-dk
+  chef-zero
+  rabbitmq (~> 5.8.5)
+  test-rmq
+    path: cookbooks/test-rmq
+
+GRAPH
+  apt (7.3.0)
+  build-essential (8.2.1)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  chef-dk (3.1.0)
+    dmg (~> 2.2)
+  chef-zero (2.0.1)
+    build-essential (>= 0.0.0)
+  dmg (2.4.0)
+  dpkg_autostart (0.4.0)
+  erlang (8.0.0)
+    yum-epel (>= 0.0.0)
+    yum-erlang_solutions (>= 1.0.3)
+  logrotate (2.2.3)
+  mingw (2.1.1)
+    seven_zip (>= 0.0.0)
+  rabbitmq (5.8.5)
+    dpkg_autostart (>= 0.0.0)
+    erlang (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+    yum-erlang_solutions (>= 0.0.0)
+  seven_zip (3.1.2)
+    windows (>= 0.0.0)
+  test-rmq (0.1.0)
+    rabbitmq (>= 0.0.0)
+  windows (7.0.0)
+  yum-epel (3.3.0)
+  yum-erlang_solutions (2.0.0)
+    yum-epel (>= 0.0.0)
